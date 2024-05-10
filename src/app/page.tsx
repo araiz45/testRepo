@@ -16,13 +16,13 @@ function App() {
       order_number +
       "require_completefalse" +
       "store_id" +
-      "29307" +
+      "29309" +
       "version1.3";
     const inFunctionSignature = HmacSHA256(
       stringCompile,
-      "ItQ4hlM208WTktInBRqJ7ps13"
+      "f4ZClV0rw9qd6K02gOk83dBAx"
     );
-    const completeURL = `store_id=29307&order_number=${order_number}&language=en&amount=${amount}&cart=kinder&signature=${inFunctionSignature}&require_complete=false&version=1.4`;
+    const completeURL = `store_id=29309&order_number=${order_number}&language=en&amount=${amount}&cart=kinder&signature=${inFunctionSignature}&require_complete=false&version=1.4`;
     return completeURL;
   };
 
